@@ -13,7 +13,9 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }  
       body{
-        background-color: #f5f4f4;
+        background-color: #272829
+;
+        justify-content: center;
         display: flex;
         height: 100vh;
         align-items: center;
@@ -25,19 +27,21 @@
       .card{
         height: 500px;
         width: 500px;
-        box-shadow: 1px 1px 20px 0px black;
+        
         overflow: hidden;
       }
       img{
         height: 500px;
+        width: 350px;
+        border-radius: 10px;
      }
      .start{
-        height: 70px;
+        height: 95px;
         width: 350px;
-        padding: 6px;
+        padding: 13px;
         box-sizing: border-box;
-        position: relative;
-        bottom: 120px;
+        position: absolute;
+        bottom: 290px;
         background: rgb(27, 27, 27, .5);
         color: white;
         transition: .5s;
@@ -57,11 +61,11 @@
       font-weight: bold;
      }
      .card:hover{
-      cursor: : pointer;
+      cursor: pointer;
      }
      .card:hover .start{
       height: 230px;
-      bottom: 240px;
+      bottom: 219px;
       background: black;
       opacity: 80%;
      }
@@ -76,7 +80,9 @@
     </style>
   </head>
     <body> 
-        
+        <div class="Title">
+          <h1>Yes</h1>
+        </div>
         <div class="container">
           <div class="card">
             <img src="Dahyun.jpg" alt="Kim Dahyun">
