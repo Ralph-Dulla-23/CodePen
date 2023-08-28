@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </style>
+    <meta charset="utf-8">
+    <title>CodePen Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }  
+      body{
+        background-color: #f5f4f4;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+      }
+      .container{
+        display: flex;
+      }
+      
+      .card{
+        height: 500px;
+        width: 500px;
+        box-shadow: 1px 1px 20px 0px black;
+        overflow: hidden;
+      }
+      img{
+        height: 500px;
+     }
+     .start{
+        height: 70px;
+        width: 350px;
+        padding: 6px;
+        box-sizing: border-box;
+        position: relative;
+        bottom: 120px;
+        background: rgb(27, 27, 27, .5);
+        color: white;
+        transition: .5s;
+     }
+     h1{
+      margin: 10px;
+      font-size: 40px;
+      
+     }
+     p{
+      font-size: 20px;
+      margin: 20px;
+      visibility: hidden;
+      opacity: 0;
+     }
+     span{
+      font-weight: bold;
+     }
+     .card:hover{
+      cursor: : pointer;
+     }
+     .card:hover .start{
+      height: 230px;
+      bottom: 240px;
+      background: black;
+      opacity: 80%;
+     }
+     .card:hover p{
+      opacity: 1;
+      visibility: visible;
+     }
+     .card:hover img{
+      transform: scale(1.1) rotate(-3deg);
+      transition: 0.5s;
+     }
+    </style>
+  </head>
+    <body> 
+        
+        <div class="container">
+          <div class="card">
+            <img src="Dahyun.jpg" alt="Kim Dahyun">
+            <div class="start">
+              <h1>Kim Dahyun</h1>
+              <p>Kim Da-hyun, known mononymously as <strong>Dahyun</strong>, is a South Korean singer, and rapper. She is a member of the South Korean girl group Twice.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <img src="Yujin.jpeg" alt="An Yujin">
+            <div class="start">
+              <h1>An Yujin</h1>
+              <p>An Yu-jin, better known mononymously as <strong>Yujin</strong>, is a South Korean singer. She is the leader of the South Korean girl group Ive under Starship Entertainment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <img src="Eunchae.jpg" alt="Hong Eunchae">
+            <div class="start">
+              <h1>Hong Eunchae</h1>
+              <p>Hong Eunchae is a South Korean singer-songwriter and MC under Source Music. She is the maknae of the girl group LE SSERAFIM.</p>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>
