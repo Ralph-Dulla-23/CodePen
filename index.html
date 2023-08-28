@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </style>
     <meta charset="utf-8">
     
@@ -10,22 +11,24 @@
       body{
         background-color: #445069;
       }
-      h1{
-        background-color: #252B48;
-        color: #5B9A8B;
+      .Title{
+        background-color: #5B9A8B;
+        color: #F7E987;
         font-size: 60px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
         text-align: center;
         border-style: solid; 
         border-radius: 10px;
-        border-color: #252B48;
+        border-color: #5B9A8B;
         margin-top: auto;
         margin-bottom: 10px;
         
         
       }
-      h3{
-      font-size: 20px;
+      .three{
+       
+      border-top-width: 10px;
+      font-size: 25px;
       margin: auto;
       position: relative;
       text-align: center;
@@ -34,7 +37,7 @@
       }
       .div1{
         
-        background-color: #5B9A8B;
+        background-color: #252B48;
         border: 10px;
         border-radius: 5px;
         display: flex;
@@ -42,16 +45,70 @@
         align-items: center;
 
       }
+      .intro{
+        margin: 10px 0px 20px auto;
+        text-align: center;
+        border-radius: 5px;
+        color:#252B48;
+        
+      }
+      .grid{
+        border-radius: 5px;
+        color: #F7E987;
+        text-align: left;
+      }
+      h2{
+        font-size: 35px;
+        color: #5B9A8B;
+      }
+      hr{
+        height: 1px;
+        margin: 10px 10px 10px 10px;
+        background-color: #252B48;
+        border: none;
+      }
+      .grid > div{
+        background-color: #252B48;
+        padding: 18px;
+        text—align: center;
+        box—shadow: 0px 0px 10px #000000;
+        margin: 10px auto 10px auto;
+        border-radius: 10px;
+      }
+      .grid >div:hover{
+        transition: 0.25s ease-in;
+        background-color: #121b2e;
+      }
+      
     </style>
   </head>
     <body> 
         <div>
-      <h1>WELCOME</h1>
+      <h1 class="Title">WELCOME</h1>
         </div>
         <div class="div1">
-          <h3>HOME</h3>
-          <h3>ABOUT</h3>
-          <h3>IDK HERE</h3>
+          <h3 class="three">HOME</h3>
+          <h3 class="three">ABOUT</h3>
+          <h3 class="three">HERE</h3>
+        </div>
+          <hr>
+        </div>
+        <div class="grid">
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h3>  Gaming</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing e lit.</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h3> Tips and Tricks</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing e lit.</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h3>Videos</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing e lit.</p>
+          </div>
         </div>
   </body>
 </html>
